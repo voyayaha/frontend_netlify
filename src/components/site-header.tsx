@@ -52,7 +52,7 @@ export function SiteHeader() {
     <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-5 sm:px-8">
       <Link to="/" className="mr-auto flex shrink-0 items-center">
     	  <img
-    		src="/voyayaha-logo.jpeg"
+    		src="/voyayaha-logo.png"
     		alt="Voyayaha — Discover beyond the usual"
     		className="h-12 w-auto max-w-[240px] object-contain sm:h-14"
     	  />
