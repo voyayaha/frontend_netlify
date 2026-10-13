@@ -50,7 +50,13 @@ export function SiteHeader() {
 
   return <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur">
     <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-5 sm:px-8">
-      <Link to="/" className="mr-auto flex items-baseline gap-2"><span className="font-display text-2xl tracking-tight text-foreground">Voyayaha</span><span className="hidden text-[0.68rem] tracking-[0.2em] text-muted-foreground uppercase sm:inline">Discover</span></Link>
+      <Link to="/" className="mr-auto flex shrink-0 items-center">
+    	  <img
+    		src="/voyayaha-logo.jpeg"
+    		alt="Voyayaha — Discover beyond the usual"
+    		className="h-12 w-auto max-w-[240px] object-contain sm:h-14"
+    	  />
+  	  </Link>
       <nav className="hidden items-center gap-6 lg:flex" aria-label="Main">{navLinks.map(link => <Link key={link.to} to={link.to} className="text-sm text-muted-foreground transition-colors hover:text-foreground" activeProps={{ className: "text-foreground" }}>{link.label}</Link>)}</nav>
       <div className="flex items-center gap-2">
         <button type="button" onClick={() => setSearchOpen(o => !o)} aria-label="Search places" aria-expanded={searchOpen} className="rounded-full p-2 text-muted-foreground hover:bg-secondary hover:text-foreground"><Search className="size-4" /></button>
